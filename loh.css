@@ -1,0 +1,204 @@
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background: linear-gradient(#40a1ff, #007FFF);
+  font-family: Arial;
+  border-radius: 10px 10px;
+  }
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+  color: none;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  mapcolor: ;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical al
+  lign on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+  
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #0081ff;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0081ff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;  
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #40a1ff;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+body {
+				margin: 1% 5%;
+				text-align: justify;
+				background-color: black;
+}
+h2 {
+				background-color: #40a1ff;
+        color: white;
+}
+
+h1 {
+  background-color: #40a1ff;
+   color: white;
+}
+
+.tik {
+				float: right;
+				height: 40px;
+}
+
+div#main 
+{	
+margin-top: 5px;
+	padding: 2%;		
+	background-color: white;
+	font-family: Arial;
+  border-radius: 10px 10px;
+}
+
+button
+{
+	width: 150px;
+	padding: 10px;
+    background: linear-gradient(#40a1ff, #007FFF);
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+button:hover
+{
+	background: #007FFF;
+	cursor: pointer;
+}
+
+.question
+{
+	padding: 15px;
+	margin: 5px;
+}
+
+.tes {
+  background-color:#40a1ff;
+  width: 50%;
+}
+
+* {box-sizing: border-box;}
+
+body {font-family: Verdana, sans-serif;}
+
+.mySlides {display: none;}
+
+.imgo {
+vertical-align: middle;
+max-height: 1500px;
+max-width: 250;
+display: block;
+   margin-right: auto;
+   margin-left: auto;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 60%;
+  max-height: 50%;
+  position: relative;
+  margin: auto;
+  top: 20px;
+  }
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  position: relative;
+  bottom: -5px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 5px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 25%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 10px}
+}
+

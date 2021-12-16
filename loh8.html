@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Операционные системы</title>
+	<link rel="stylesheet" type="text/css" href="loh.css">
+</head>
+<body>
+		<div class="navbar">						
+								<a href="loh.html">Главное</a>
+  <div class="dropdown">
+    <button class="dropbtn">Содержание
+      <i class="fa fa-caret-down"></i>      				
+    </button>  			
+    <div class="dropdown-content">
+      <a href="loh1.html">Шинна процессора</a>
+      <a href="loh2.html">Видеосистема Пк</a>
+      <a href="loh3.html">Построение ОС</a>
+      <a href="loh4.html">Интерфейс Пк</a>
+      <a href="loh5.html">Процессор</a>
+      <a href="loh6.html">Носители информации</a>
+    </div> 
+  </div>
+</div>
+
+<font style="color: black">
+	<div id="main" style="min-height: 350px;">
+		<h1 align="center">Тест по теме ОС Windows</h1><br>
+		<div id="instruction">
+			<h3>В данном тесте вы проверите себя на знание истории развития и особенностей операционной системы Windows. <br>Если чувствуете себя не уверенным прочитайте статью на нашем сайте по данной теме.<br><br></h3>
+			<button class="form-submit" id="kn_sl" onclick="start_test();">Начать</button>
+		</div>
+		
+		
+
+		<form name="test">
+			<div id="the_end" style="display: none;">
+			<p id="rezult"></p><br>
+			<button class="form-submit" type="reset" id="kn_sl" onclick="start_test();">Попробовать ещё раз</button>
+			</div>
+			<div class="question" id="vopros1" style="display:none;">
+				<li><b class="tes">Когда появилась операционная система Windows?</b><br/>
+				<input type="radio" name="Q1"/> 1995<br>
+				<input type="radio" name="Q1"/> 1981<br>
+				<input type="radio" name="Q1"/> 1992<br>
+				<input type="radio" name="Q1"/> 2005<br>
+				<input type="radio" name="Q1"/> 1945<br>
+			</div>
+
+			<div class="question" id="vopros2" style="display:none;">
+				<li><b class="tes"> Как называется файл, созданный с помощью программы-приложения Windows?</b><br/>
+				<input type="radio" name="Q2"/> папка<br>
+				<input type="radio" name="Q2"/> документ<br>
+				<input type="radio" name="Q2"/> корневой каталог<br>
+				<input type="radio" name="Q2"/> адрес<br>
+				<input type="radio" name="Q2"/> каталог<br>
+			</div>
+
+			<div class="question" id="vopros3" style="display:none;">
+				<li><b class="tes"> Что такое "интерфейс"?</b><br/>
+				<input type="radio" name="Q3"/> взаимодействие магнитного диска со средствами компьютера<br>
+				<input type="radio" name="Q3"/> взаимодействие клавиатуры с средствами компьютера<br>
+				<input type="radio" name="Q3"/> взаимодействие пользователя со средствами компьютера<br>
+				<input type="radio" name="Q3"/> взаимодействие пользователя с дискетой, что лежит на столе<br>
+				<input type="radio" name="Q3"/> взаимодействие пользователя и учителя<br>
+			</div>
+
+			<div class="question" id="vopros4" style="display:none;">
+				<li><b class="tes"> Какую спецификацию (полное имя) имеет файл РЕФЕРАТ, который находится в папке ПЕТРУК, которая находится в папке 10-А, что на диске А:?</b><br/>
+				<input type="radio" name="Q4"/>  А:\10-А\ПЕТРУК<br>
+				<input type="radio" name="Q4"/>  А:\10-А\РЕФЕРАТ\ПЕТРУК<br>
+				<input type="radio" name="Q4"/> А:\РЕФЕРАТ\ПЕТРУК<br>
+				<input type="radio" name="Q4"/> А:\10-А\ПЕТРУК\РЕФЕРАТ<br>
+				<input type="radio" name="Q4"/> А:\10-А\РЕФЕРАТ<br>
+			</div>
+
+			<div class="question" id="vopros5" style="display:none;">
+				<li><b class="tes"> Что такое "адрес" на компьютере?</b><br/>
+				<input type="radio" name="Q5"/> путь к папке<br>
+				<input type="radio" name="Q5"/> название и расширение файла<br>
+				<input type="radio" name="Q5"/> перечень дисков компьютера<br>
+				<input type="radio" name="Q5"/> полное имя файла<br>
+				<input type="radio" name="Q5"/> последовательность из имени диска и название папки, что ведет к файлу<br>
+			</div>
+
+			<div class="question" id="vopros6" style="display:none;">
+				<li><b class="tes"> Как могут обозначаться корневые каталоги (диски)?</b><br/>
+				<input type="radio" name="Q6"/> A:, B:, C:<br>
+				<input type="radio" name="Q6"/> C/, D/<br>
+				<input type="radio" name="Q6"/> PUMA<br>
+				<input type="radio" name="Q6"/> ABBA<br>
+				<input type="radio" name="Q6"/> REX<br>
+			</div>
+
+			<div class="question" id="vopros7" style="display:none;">
+				<li><b class="tes"> Что указывается с помощью названия и расширения файла?</b><br/>
+				<input type="radio" name="Q7"/> назначение и название файла<br>
+				<input type="radio" name="Q7"/> назначение и тип файла<br>
+				<input type="radio" name="Q7"/> тип и расширение файла<br>
+				<input type="radio" name="Q7"/>  объем и тип файла<br>
+				<input type="radio" name="Q7"/> название и объем файла<br>
+			</div>
+
+			<div class="question" id="vopros8" style="display:none;">
+				<li><b class="tes"> Какое расширение имеют исполняемые файлы?</b><br/>
+				<input type="radio" name="Q8"/> .pic, .sys, .doc<br>
+				<input type="radio" name="Q8"/> .com, .exe, .txt<br>
+				<input type="radio" name="Q8"/> .com, .exe, .bat<br>
+				<input type="radio" name="Q8"/> .exe, .txt, .doc<br>
+				<input type="radio" name="Q8"/> .bmp, .sys, .exe<br>
+			</div>
+
+			<div class="question" id="vopros9" style="display:none;">
+				<li><b class="tes"> Сколько максимально байт может иметь название файла?</b><br/>
+				<input type="radio" name="Q9"/> 257<br>
+				<input type="radio" name="Q9"/> 1024<br>
+				<input type="radio" name="Q9"/> 64<br>
+				<input type="radio" name="Q9"/> 255<br>
+				<input type="radio" name="Q9"/> 128<br>
+			</div>
+
+			<div class="question" id="vopros10" style="display:none;">
+				<li><b class="tes"> Какое расширение имеют текстовые документы Word?</b><br/>
+				<input type="radio" name="Q10"/> .xls<br>
+				<input type="radio" name="Q10"/> .bmp<br>
+				<input type="radio" name="Q10"/> .exe<br>
+				<input type="radio" name="Q10"/> .sys<br>
+				<input type="radio" name="Q10"/>  .doc<br>
+			</div>
+
+			<div class="question" id="vopros11" style="display:none;">
+				<li><b class="tes"> Что такое папка?</b><br/>
+				<input type="radio" name="Q11"/> Место для хранения файлов документов<br>
+				<input type="radio" name="Q11"/>  Исполняемый файл<br>
+				<input type="radio" name="Q11"/>  Скрытый файл<br>
+				<input type="radio" name="Q11"/>  Файл по старому<br>
+				<input type="radio" name="Q11"/> Текстовый документ<br>
+			</div>
+
+			<div class="question" id="vopros12" style="display:none;">
+				<li><b class="tes"> При стандартных установках Windows одинарным щелчком правой кнопкой мыши можно:</b><br/>
+				<input type="radio" name="Q12"/> открыть объект<br>
+				<input type="radio" name="Q12"/> вызвать контекстное меню<br>
+				<input type="radio" name="Q12"/> установить текущее положение указателя ввода информации<br>
+				<input type="radio" name="Q12"/> выделить слово в текстовом документе<br>
+				<input type="radio" name="Q12"/> скопировать объект<br>
+			</div>
+
+			<div class="question" id="vopros13" style="display:none;">
+				<li><b class="tes"> Для перевода дополнительного блока клавиатуры в цифровой режим нужно нажать клавишу или сочетание клавиш:</b><br/>
+				<input type="radio" name="Q13"/> CapsLock<br>
+				<input type="radio" name="Q13"/> Shift + CapsLock<br>
+				<input type="radio" name="Q13"/> NumLock<br>
+				<input type="radio" name="Q13"/> Shift + NumLock<br>
+				<input type="radio" name="Q13"/> Tab<br>
+			</div>
+
+			<div class="question" id="vopros14" style="display:none;">
+				<li><b class="tes"> При отключении цифрового режима</b><br/>
+				<input type="radio" name="Q14"/> компьютер не реагирует на нажатие клавиш дополнительной клавиатуры<br>
+				<input type="radio" name="Q14"/> нажатие на любую клавишу дополнительной цифровой клавиатуры блокирует работу компьютера<br>
+				<input type="radio" name="Q14"/> дополнительная цифровая клавиатура работает как функциональная клавиатура<br>
+				<input type="radio" name="Q14"/> дополнительная цифровая клавиатура работает как клавиши управления движением курсора<br>
+				<input type="radio" name="Q14"/> отключение режима NumLock не влияет на работу дополнительной цифровой клавиатуры<br>
+			</div>
+
+			<div class="question" id="vopros15" style="display:none;">
+				<li><b class="tes"> Для работы с простыми текстовыми документами используется приложение</b><br/>
+				<input type="radio" name="Q15"/> Адресная книга<br>
+				<input type="radio" name="Q15"/> Paint<br>
+				<input type="radio" name="Q15"/> Проводник<br>
+				<input type="radio" name="Q15"/> Калькулятор<br>
+				<input type="radio" name="Q15"/> Блокнот<br>
+			</div>
+
+			<div class="question" id="vopros16" style="display:none;">
+				<li><b class="tes"> Программа, работающая под управлением Windows, называется:</b><br/>
+				<input type="radio" name="Q16"/> приложение<br>
+				<input type="radio" name="Q16"/> документ<br>
+				<input type="radio" name="Q16"/> среда<br>
+				<input type="radio" name="Q16"/> как-то иначе<br>
+				<input type="radio" name="Q16"/> файл<br>
+			</div>
+
+			<div class="question" id="vopros17" style="display:none;">
+				<li><b class="tes"> Главное меню открывается:</b><br/>
+				<input type="radio" name="Q17"/> щелчком по значку Мой компьютер<br>
+				<input type="radio" name="Q17"/> кнопкой Пуск<br>
+				<input type="radio" name="Q17"/> щелчком на Панели задач<br>
+				<input type="radio" name="Q17"/> контекстным меню<br>
+				<input type="radio" name="Q17"/> двойным щечком по пустому месту рабочего стола<br>
+			</div>
+
+			<div class="question" id="vopros18" style="display:none;">
+				<li><b class="tes"> Для изменения размеров окна равномерно по ширине и высоте необходимо:</b><br/>
+				<input type="radio" name="Q18"/> потянуть за горизонтальную рамку<br>
+				<input type="radio" name="Q18"/> потянуть за вертикальную рамку<br>
+				<input type="radio" name="Q18"/> потянуть за угол<br>
+				<input type="radio" name="Q18"/> потянуть за заголовок<br>
+				<input type="radio" name="Q18"/> потянуть за угол с зажатой кнопкой Ctrl<br>
+			</div>
+
+			<div class="question" id="vopros19" style="display:none;">
+				<li><b class="tes"> Завершение работы с компьютером происходит по команде:</b><br/>
+				<input type="radio" name="Q19"/> Пуск\Программы\Завершение работы<br>
+				<input type="radio" name="Q19"/> нажать Reset<br>
+				<input type="radio" name="Q19"/> Quit<br>
+				<input type="radio" name="Q19"/> Пуск\Завершение работы<br>
+				<input type="radio" name="Q19"/> Ctrl+Alt+Delete<br>
+			</div>
+
+			<div class="question" id="vopros20" style="display:none;">
+				<li><b class="tes"> Что такое ярлык?</b><br/>
+				<input type="radio" name="Q20"/> графическое представление объекта<br>
+				<input type="radio" name="Q20"/> активный элемент управления<br>
+				<input type="radio" name="Q20"/> копия файла<br>
+				<input type="radio" name="Q20"/> дупликат файла<br>
+				<input type="radio" name="Q20"/> указатель на объект<br>
+			</div>
+
+			<div class="question" id="vopros21" style="display:none;">
+				<li><b class="tes"> Какая версия операционной системы Windows не была выпущена фирмой Microsoft?</b><br/>
+				<input type="radio" name="Q21"/> Windows96<br>
+				<input type="radio" name="Q21"/> Windows95<br>
+				<input type="radio" name="Q21"/> WindowsXP<br>
+				<input type="radio" name="Q21"/> Windows10<br>
+				<input type="radio" name="Q21"/> Windows98<br>
+			</div>
+
+			<div class="question" id="vopros22" style="display:none;">
+				<li><b class="tes"> Как изменить представление папок и файлов в окне?</b><br/>
+				<input type="radio" name="Q22"/> меню ПРАВКА<br>
+				<input type="radio" name="Q22"/> меню ВИД<br>
+				<input type="radio" name="Q22"/> меню СЕРВИС<br>
+				<input type="radio" name="Q22"/> меню ПЕРЕХОД<br>
+				<input type="radio" name="Q22"/> меню ИЗМЕНИТЬ<br>
+			</div>
+
+			<div class="question" id="vopros23" style="display:none;">
+				<li><b class="tes"> Какая клавиша используется для выделения группы объектов, расположенных не подряд?</b><br/>
+				<input type="radio" name="Q23"/> ENTER<br>
+				<input type="radio" name="Q23"/> ALT<br>
+				<input type="radio" name="Q23"/> CTRL<br>
+				<input type="radio" name="Q23"/> SHIFT<br>
+				<input type="radio" name="Q23"/> TAB<br>
+			</div>
+
+			<div class="question" id="vopros24" style="display:none;">
+				<li><b class="tes"> Самая первая версия Windows вышла в...</b><br/>
+				<input type="radio" name="Q24"/> 1979 году<br>
+				<input type="radio" name="Q24"/> 1976 году<br>
+				<input type="radio" name="Q24"/> 1971 году<br>
+				<input type="radio" name="Q24"/> 1975 году<br>
+				<input type="radio" name="Q24"/> 1973 году<br>
+			</div>
+
+			<div class="question" id="vopros25" style="display:none;">
+				<li><b class="tes"> В какой версии Windows пользователи впервые встретили плиточный интерфейс?</b><br/>
+				<input type="radio" name="Q25"/> Windiws XP<br>
+				<input type="radio" name="Q25"/> Windiws 98<br>
+				<input type="radio" name="Q25"/> Windiws 7<br>
+				<input type="radio" name="Q25"/> Windiws 10<br>
+				<input type="radio" name="Q25"/> Windiws 8<br>
+			</div>
+
+			<div class="question" id="vopros26" style="display:none;">
+				<li><b class="tes"> Какая версия Windows была актуальной дольше всего из своего семейства?</b><br/>
+				<input type="radio" name="Q26"/> Windiws XP<br>
+				<input type="radio" name="Q26"/> Windiws 98<br>
+				<input type="radio" name="Q26"/> Windiws 7<br>
+				<input type="radio" name="Q26"/> Windiws 10<br>
+				<input type="radio" name="Q26"/> Windiws 8<br>
+			</div>
+
+			<div class="question" id="vopros27" style="display:none;">
+				<li><b class="tes"> Единицей измерения информации является:</b><br/>
+				<input type="radio" name="Q27"/> бит<br>
+				<input type="radio" name="Q27"/> бод<br>
+				<input type="radio" name="Q27"/> ампер<br>
+				<input type="radio" name="Q27"/> байт<br>
+				<input type="radio" name="Q27"/> герц<br>
+			</div>
+
+			<div class="question" id="vopros28" style="display:none;">
+				<li><b class="tes"> Для чего служит файловая структура?</b><br/>
+				<input type="radio" name="Q28"/>  Для хранения информации на внешних хранителях<br>
+				<input type="radio" name="Q28"/>  Для загрузки программ<br>
+				<input type="radio" name="Q28"/> Для хранения информации во внешней памяти<br>
+				<input type="radio" name="Q28"/> Для редактирования текстов<br>
+				<input type="radio" name="Q28"/> Чтобы быстрее работать<br>
+			</div>
+
+			<div class="question" id="vopros29" style="display:none;">
+				<li><b class="tes"> В буфер обмена можно поместить</b><br/>
+				<input type="radio" name="Q29"/> файл <br>
+				<input type="radio" name="Q29"/> папку со всеми включенными в нее объектами: файлами и папками<br>
+				<input type="radio" name="Q29"/> фрагмент текста<br>
+				<input type="radio" name="Q29"/> всё перечисленное<br>
+				<input type="radio" name="Q29"/> фрагмент рисунка<br>
+			</div>
+
+			<div class="question" id="vopros30" style="display:none;">
+				<li><b class="tes"> Если свернуть окно, то</b><br/>
+				<input type="radio" name="Q30"/> прекратится выполнение программы-приложения<br>
+				<input type="radio" name="Q30"/> окна приложения освободят рабочий стол, но соответствующее им приложение будет временно приостановлено, хотя значок его останется на панели задач<br>
+				<input type="radio" name="Q30"/> соответствующее ему приложение будет временно приостановлено, хотя окна приложения не освободит рабочий стол<br>
+				<input type="radio" name="Q30"/> окна приложения освободят рабочий стол, но соответствующее им приложение будет временно приостановлено, найти которое можно будет через поисковик<br>
+				<input type="radio" name="Q30"/> окна приложения освободят рабочий стол, но соответствующее им приложение будет активно, и значок его останется на панели задач<br>
+			</div>
+		</form>
+	
+		
+		<br><button class="form-submit" id="kn_pr" onclick="check_me();" style="display:none;">Закончить</button>
+	</div>
+
+	<script type="text/javascript" src="loh.js"></script>
+</body>
+</html>
+
